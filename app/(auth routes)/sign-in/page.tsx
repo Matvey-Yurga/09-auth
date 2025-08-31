@@ -13,7 +13,7 @@ export default function SignIn() {
                 const data = Object.fromEntries(fromData) as RegisterPayload;
                 const res = await Login(data);
                 if (res) {
-                    router.push('/Profile')
+                    router.push('/profile')
                 } else {
                     setError('Failed to register');
                 }

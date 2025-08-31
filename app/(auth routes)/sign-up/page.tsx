@@ -12,7 +12,7 @@ export default function SingUp(){
             const data = Object.fromEntries(fromData) as RegisterPayload;
             const res = await Register(data);
             if (res) {
-                router.push('/Profile')
+                router.push('/profile')
             } else {
                 setError('Failed to register');
             }
